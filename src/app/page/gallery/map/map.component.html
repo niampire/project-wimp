@@ -1,0 +1,48 @@
+<!-- <p>
+  map works!
+</p> -->
+
+<!-- <div class='map-container'>
+    <h1> {{texto}}</h1>
+    <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+      <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+</div> -->
+
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [disableDefaultUI]="fauls"
+  [zoomControl]="true"
+  (mapClick)="mapClicked($event)">
+
+  <agm-marker
+      *ngFor="let m of markers; let i = index"
+      (markerClick)="clickedMarker(m.label, i)"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [label]="m.label"
+      [markerDraggable]="m.draggable"
+      (dragEnd)="markerDragEnd(m, $event)">
+
+    <agm-info-window>
+      <strong class='map-info'>
+        <a href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg'>
+          <img class='marker-image' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt="">
+        </a>
+        <!-- <p>InfoWindow content</p> -->
+      </strong>
+    </agm-info-window>
+
+  </agm-marker>
+
+  <agm-circle [latitude]="lat" [longitude]="lng"
+      [radius]="5000"
+      [fillColor]="red"
+      [circleDraggable]="true"
+      [editable]="true">
+  </agm-circle>
+
+
+</agm-map>

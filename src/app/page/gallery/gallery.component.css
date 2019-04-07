@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url ('./assets/paws.svg');
+  /* background-image: url ('https://svgsilh.com/svg_v2/1353144.svg'); */
+}
+div
+/* .gallery-users {
+  flex-wrap: wrap;
+} */
+
+/* .gallery-users__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+} */
+
+/* .users-info {
+  flex-wrap: wrap;
+} */
+app-map {
+  /* margin-top: -70px;
+  overflow: hidden!important; */
+  /* clear: both; */
+/* position: fixed; */
+/* width: 500px; */
+text-align: center;
+  /* width: 70%; */
+}
+app-image {
+/* width: 300px; */
+ }
+
+.flex-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* width: 300px; */
+}

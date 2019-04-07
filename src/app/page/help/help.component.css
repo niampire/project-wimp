@@ -1,0 +1,42 @@
+
+.help {
+  height: 500px;
+  margin-bottom: 150px;
+}
+.help-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h3 {
+  padding-top:20px;
+}
+img {
+  width:45%;
+  /* float: right; */
+}
+
+.help-info__string {
+/* background: url('/assets/help.jpg'); */
+}
+
+.img-first:hover{
+/* background: url('/assets/help-1.jpg'); */
+
+}
+
+.img-second:hover{
+
+}
+
+.img-third:hover{
+
+}
+
+.img-fourth:hover{
+
+}
+
+.img-fifth:hover{
+
+}

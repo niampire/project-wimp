@@ -1,0 +1,26 @@
+<!-- <p>
+  footer works!
+</p> -->
+
+<div class='footer'>
+  <div class="footer-logo">
+      <img [routerLink]="['']"
+      routerLinkActive="active"
+
+      src="./assets/logo8white.svg"
+      alt="WIMP">
+  </div>
+  <div class='footer-telegram'>
+        <div class='footer-icon'>
+          <a class='footer-icon__content' href="https://web.telegram.org">
+            <img class='footer-logo__telegram'
+            src="./assets/telegram1.svg" alt="telegram">
+            <span class=''>Telegram Bot</span>
+          </a>
+        </div>
+        <div class='footer-copyright'>
+            <p>&copy; {{ today | date: 'yyyy' }} WIMP. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+

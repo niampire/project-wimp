@@ -1,0 +1,262 @@
+<!-- <p>
+  found works!
+</p>
+<p>
+  found works!
+</p>
+<p>
+  found works!
+</p> -->
+<form>
+  <h3 class='form-title'>Search Pet</h3>
+  <div class="col-lg-2">
+    <label style="padding-top: 5px; color: black;">Choose type you searching</label>
+    <div class="radio" style="margin-left: -20px;">
+    <label class='radio-btn' style="font-size: 1em; color: black; display: inline-block;">
+    <input type="radio" name="STATUS" value="Lost" checked="">
+    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+    <font class='radio-btn__text' style="vertical-align: 5px; margin-left: -7px;">Lost</font>
+    </label>
+    <label class='radio-btn' style="font-size: 1em; color: black; display: inline-block; margin-left: -15px;">
+    <input type="radio" name="STATUS" value="Found">
+    <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+    <font class='radio-btn__text' style="vertical-align: 5px; margin-left: -7px;">Found</font>
+    </label>
+    </div>
+  </div>*
+    <div><label>Pick date, when you lost or found a pet</label>
+      <input id="date" type="date" value="2017-06-01"></div>
+    <br>
+    <div>
+      <label>Enter message</label>
+      <input type='textarea'>
+    </div>
+
+
+</form>
+<router-outlet></router-outlet>
+<div  class='map-position'>
+  <app-map></app-map>
+</div>
+<button type='submit'>Submit</button>
+<!-- <form [formGroup]="userForm" (submit)="saveUser()">
+    <label for="name">Name</label>
+    <input formControlName="name" id="name" #name="ngControl" />
+    <div [hidden]="name.valid">Required</div>
+
+    <label for="email">Email</label>
+    <input formControlName="email" id="email" #email="ngControl" />
+    <div [hidden]="email.valid">Invalid</div>
+
+    <label for="profile">Profile Description</label>
+    <input formControlName="email" id="profile" #profile="ngControl" />
+    <div [hidden]="profile.valid">Invalid</div>
+
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+  </form> -->
+
+<!-- main app container -->
+<!-- <div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <h3>Angular 7 Template-Driven Form Validation</h3>
+              <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" [mustMatch]="['password', 'confirmPassword']" novalidate>
+                  <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+                      <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+                          <div *ngIf="firstName.errors.required">First Name is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" name="lastName" [(ngModel)]="model.lastName" #lastName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }" required />
+                      <div *ngIf="f.submitted && lastName.invalid" class="invalid-feedback">
+                          <div *ngIf="lastName.errors.required">Last Name is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                      <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                          <div *ngIf="email.errors.required">Email is required</div>
+                          <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
+                      <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                          <div *ngIf="password.errors.required">Password is required</div>
+                          <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="confirmPassword">Confirm Password</label>
+                      <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" [ngClass]="{ 'is-invalid': f.submitted && confirmPassword.invalid }" required />
+                      <div *ngIf="f.submitted && confirmPassword.invalid" class="invalid-feedback">
+                          <div *ngIf="confirmPassword.errors.required">Confirm Password is required</div>
+                          <div *ngIf="confirmPassword.errors.mustMatch">Passwords must match</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <button class="btn btn-primary">Register</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div> -->
+<!-- <h2>Start a Found Pet Search</h2>
+<p>Upload a photo of an animal and we’ll show you if the animal has
+    been reported lost by anyone in the Finding Rover Community
+  </p>
+  <form class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h3>Написать нам</h3>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Сообщение..." rows="3"></textarea>
+        <input type="submit" value="Отправить">
+      </div>
+    </form> -->
+<!-- <h2>Form group example:</h2> -->
+
+<!-- <form
+[formGroup]="userForm"
+(ngSubmit)="onSubmit()">
+  <label>
+    First Name
+    <input type="text" formControlName="firstName">
+  </label>
+  <p *ngIf="userForm.get('firstName').errors?.minlength">To short {{userForm.get('firstName').errors['minlength'] | json}}</p>
+  <br>
+
+  <label>
+    Last Name
+    <input type="text" formControlName="lastName">
+  </label>
+  <br>
+
+  <label>Emails:</label>
+  <ng-container type="text" formArrayName="emails">
+    <input type="text" formControlName="0">
+  </ng-container>
+
+  <div formGroupName="address">
+    <label>
+      Line 1
+      <input type="text" formControlName="line1">
+    </label>
+    <br>
+
+    <label>
+      Line 2
+      <input type="text" formControlName="line2">
+    </label>
+    <br>
+
+    <label>
+      City
+      <input type="text" formControlName="city">
+    </label>
+    <br>
+
+    <label>
+      Country
+      <input type="text" formControlName="country">
+    </label>
+    <br>
+
+    <label *ngIf="userForm.get('address.postalCode')">
+      Postal Code
+      <input type="text" formControlName="postalCode">
+    </label>
+    <br>
+
+  </div>
+  <br>
+
+  <button type="submit">Print data (interrupt function if not valid)</button>
+  <button type="submit" [disabled]="userForm.invalid">Print data (disable if form invalid)</button>
+</form> -->
+
+<!-- <ul>
+    <li>
+      <a [href]="'/ng-model'">ngModel</a>
+    </li>
+    <li>
+      <a [href]="'/reactive-forms-control'">reactive form control</a>
+    </li>
+    <li>
+      <a [href]="'/reactive-forms-group'">reactive form group</a>
+    </li>
+  </ul> -->
+
+<!--
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Angular 7 Template-Driven Form Validation</h3>
+                    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" [mustMatch]="['password', 'confirmPassword']" novalidate>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+                            <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+                                <div *ngIf="firstName.errors.required">First Name is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" name="lastName" [(ngModel)]="model.lastName" #lastName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }" required />
+                            <div *ngIf="f.submitted && lastName.invalid" class="invalid-feedback">
+                                <div *ngIf="lastName.errors.required">Last Name is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                <div *ngIf="email.errors.required">Email is required</div>
+                                <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
+                            <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                                <div *ngIf="password.errors.required">Password is required</div>
+                                <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" [ngClass]="{ 'is-invalid': f.submitted && confirmPassword.invalid }" required />
+                            <div *ngIf="f.submitted && confirmPassword.invalid" class="invalid-feedback">
+                                <div *ngIf="confirmPassword.errors.required">Confirm Password is required</div>
+                                <div *ngIf="confirmPassword.errors.mustMatch">Passwords must match</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- credits -->
+    <!-- <div class="text-center">
+        <p>
+            <a href="http://jasonwatmore.com/post/2018/11/10/angular-7-template-driven-forms-validation-example" target="_top">Angular 7 - Template-Driven Forms Validation Example</a>
+        </p>
+        <p>
+            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        </p>
+    </div> -->

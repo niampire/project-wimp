@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Rancho', cursive;
+  src: url("https://fonts.googleapis.com/css?family=Rancho");
+}
+
+* {
+  font-family: 'rancho', cursive;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  /* color: #FFF; */
+}
+
+.image{
+width: 100%;
+height: auto;
+
+/* position: relative; */
+/* background-image: teal url(https://www.lostmydoggie.com/img/slide0.jpg); */
+/* background-blend-mode: darken; */
+}
+
+/* .image:before {
+  height: 750px;
+  opacity: 0.6!important;
+  width: 1300px;
+  top: 0;
+  border-radius: 50%;
+  margin-left: -540px;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+  transform: translate3d(-20%, 0, 0);
+  background-color: #108896;
+  margin-top: -750px;
+  transform: translateX(0);
+  position: absolute;
+} */
+
+/* .image:after {
+  content: "";
+  display: block;
+  position: absolute; /* тоже могла бы быть абсолютной */
+  /* top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.2);
+}  */
+
+.button-start {
+  height: 55px;
+  width: 180px;
+  /* border-radius: 20px; */
+  background-color: #f04e4e;
+  border: none;
+  box-shadow: 10px 10px 5px #927575;
+
+  /* transform: scale(1.15); */
+  /* -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease; */
+  -webkit-animation: pulses 3s infinite ease-in-out;
+    -o-animation: pulses 3s infinite ease-in-out;
+    -ms-animation: pulses 3s infinite ease-in-out;
+    -moz-animation: pulses 3s infinite ease-in-out;
+    animation: pulses 3s infinite ease-in-out;
+}
+@-webkit-keyframes pulses {
+  0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+  50% { -webkit-transform: scale(1); opacity: 1; }
+  100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulses {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.button-start__title {
+  font-size: 35px;
+}
+
+.home-background {
+  /* background: url('/assets/slide0-min.jpg') no-repeat;
+  background-size: 100%  130%;
+  height: 900px; */
+  position: relative;
+}
+
+.home-background .title-info {
+  /* top: 350px; */
+  top: calc( (100vw - 480px)/(1280 - 480) * (250 - 90) + 40px);
+  /* margin-top: -590px; */
+  vertical-align: baseline;
+  /* background-color: #108896; */
+  margin-bottom: 15%;
+  padding-left: 5%;
+  text-align: left;
+  position: absolute;
+  /* overflow: hidden; */
+  /* margin-left: 200px; */
+  width: 89%;
+}
+
+.title-info{
+  color: #FFF;
+}
+
+.title-info__h2 {
+  /* font-size: 160px; */
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (110 - 50) + 40px);
+  margin-bottom: 40px;
+
+}
+
+.title-info__h3 {
+  /* font-size: 70px; */
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (50 - 20) + 20px);
+  margin-bottom: 60px;
+  /* padding-left: 20px; */
+  /* width: 1500px; */
+}
+
+.work {
+  padding-top: 3%;
+  width: 100% auto;
+  height: 690px;
+}
+.work-info {
+  padding-top: 30px;
+  display: flex;
+}
+
+.work-info__h2 {
+  /* font-size: 90px; */
+}
+
+.work-info__h2 {
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (60 - 18) + 18px);
+}
+
+.work-content {
+  /* padding-top: 0.5%; */
+  opacity: 0.5;
+}
+
+.work-content:hover{
+  transform: scale(1.3);
+  opacity: 1;
+  margin: 40px 0 50px;
+  visibility: visible;
+  /* transition: 2s; */
+}
+
+.work-content__first:hover {
+  margin: 0 0 50px 0;
+}
+
+.work-content__last:hover {
+  margin: 40px 0 0 0;
+}
+
+.work-list {
+  padding-left: 10%;
+  width: 150vh;
+}
+
+.work-list__h3 {
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (40 - 20) + 20px);
+}
+
+.work-list__text {
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (22 - 10) + 10px);
+}
+
+.work-img {
+ padding-top: 8%;
+  /* width: 150vh; */
+  /* width: 100%; */
+  /* float: right; */
+}
+
+.work-link {
+text-decoration: none;
+}
+
+.work-link:visited {
+  color: #000;
+}
+
+.work-text {
+  /* background-color: yellow;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 130px; */
+  opacity: 1;
+
+}
+
+.text-hidden {
+  visibility: hidden;
+}
+
+.work-title:hover+.text-hidden,
+.text-hidden:hover,
+.work-content:hover,
+.work-title:hover {
+  visibility: visible;
+  /* transition: 1.5s; */
+}

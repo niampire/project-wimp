@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Rancho', cursive;src: url("https://fonts.googleapis.com/css?family=Rancho");
+}
+* {
+  font-family: 'rancho';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* .image {
+width: 100%;
+ } */
+ app-filter {
+   /* position: fixed;
+   margin: 0 auto; */
+ }
