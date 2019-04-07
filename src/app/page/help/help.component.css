@@ -12,17 +12,23 @@ h3 {
   padding-top:20px;
 }
 img {
-  width:45%;
+  width:25%;
+  position: absolute;
+  top: 120px;
+   right:50px;
+   opacity: 0.01;
   /* float: right; */
+}
+.help-img__main {
+  opacity: 1;
 }
 
 .help-info__string {
 /* background: url('/assets/help.jpg'); */
 }
 
-.img-first:hover{
-/* background: url('/assets/help-1.jpg'); */
-
+.img-first:hover+.help-img__first{
+  opacity: 1;
 }
 
 .img-second:hover{
