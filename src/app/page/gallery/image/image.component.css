@@ -66,6 +66,7 @@
   margin: 30px auto;
   font-family: sans-serif;
 }
+
 .gallery-info{
   /* border: 4px ridge rgb(181, 246, 137); */
   margin-bottom: 25px;
@@ -73,6 +74,12 @@
   /* background-color: #f6f3ee; */
   box-shadow: 10px 10px 8px grey;
 
+}
+
+.gallery-image {
+  width: 150%;
+  height: 300px;
+  padding-bottom: -50px;
 }
 
 h3 {

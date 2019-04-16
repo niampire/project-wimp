@@ -18,7 +18,7 @@ export class ImageComponent implements OnInit {
     userPhoto: string = "";
     response: any;
     request:  [];
-    users: Object;
+    requests: Object;
     // resolving: String;
     // info: Info;
     // requests = [
@@ -33,10 +33,11 @@ export class ImageComponent implements OnInit {
 
     ngOnInit() {
       this.data.getUsers().subscribe(data => {
-        //this.response = response;
-        this.users = data
-        //console.log(this.response);
-        console.log(this.users);
+
+        this.response = data;
+        this.requests = this.response.requests;
+
+        console.log(this.requests);
 
         // this.resolving = '112317'
  });

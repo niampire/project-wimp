@@ -1,112 +1,24 @@
 <!-- <p>
   image works!
 </p> -->
-<!-- <div class="card-row">
-    <img class='card-img'
-    src="./assets/lostPetIcon.svg" alt="avatar">
-    <p>Name</p>
-</div> -->
-
-<!-- <div class='card-row'>
-  <div>
-    <div class='card'>
-      <div>
-          <img class='card-img'
-          src="./assets/foundPetIcon.svg" alt="avatar">
-          <span class="card-title">{{ response?.login }} Name</span>
-      </div>
-      <div>
-          <p>
-              {{ response?.location }}
-              I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.
-            </p>
-      </div>
-      <div class="card-action">
-          <a href="{{response?.url}}">This is a link</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!-- <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img class='card-img'
-
-          src="./assets/foundPetIcon.svg" alt="avatar">
-          <span class="card-title">{{ response?.login }} Name</span>
-        </div>
-        <div class="card-content">
-          <p>
-            {{ response?.location }}
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.
-          </p>
-        </div>
-        <div class="card-action">
-          <a href="{{response?.url}}">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- src='{{ users.avatar_url }}' alt='avatar' -->
-  <!-- <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/foundPetIcon.svg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="card" style="width: 18rem;">
-        <img src="./assets/foundPetIcon.svg" class="card-img-top" alt="photo">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div> -->
-      <!-- <div class="products">
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="./assets/foundPetIcon.svg">
-            </div>
-            <div class="product-info">
-              <h5>Winter Jacket</h5>
-              <h6>$99.99</h6>
-            </div>
-          </div>
-          еще продукты  -->
-
         <!-- </div> -->
         <!-- <h3>Gallery</h3> -->
-        <div *ngIf="users">
-            <div *ngFor="let user of users.data">
+        <div *ngIf="requests">
+            <div *ngFor="let request of requests">
               <!-- <a>{{ user.first_name }},</a><p>{{ user.last_name }}</p> -->
 
         <div class='gallery-info'>
-            <a href='{{user.avatar}}'>
+            <a href='{{request.photoURL}}'>
               <figure class='gallery-figure'>
-                <img src='{{user.avatar}}' alt="">
+                <img class='gallery-image' src='{{request.photoURL}}' alt="photo-pet">
                 <figcaption>
                     <div class='gallery-title'>
-                        <h3> {{user.first_name}}, {{user.login}}Title</h3>
-                        <p> Date</p>
+                        <h3> {{ request.username }} </h3>
+                        {{request.type}}
+                        <p> {{request.creationDate}}</p>
 
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p>{{request.message}}</p>
                 </figcaption>
               </figure>
             </a>
@@ -114,92 +26,3 @@
         </div>
       </div>
 
-
-        <!-- <div class='gallery-info'>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg">
-            <figure class='gallery-figure'>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt="">
-              <figcaption>
-                  <div class='gallery-title'>
-                      <h3> {{user.first_name}}Title</h3>
-                      <p> Date</p>
-
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div> -->
-          <!-- <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg" alt="">
-              <figcaption>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg" alt="">
-               <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg09.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a>
-          <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg">
-            <figure>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg10.jpg" alt="">
-              <figcaption>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </figcaption>
-            </figure>
-          </a> -->
-        <!-- </div> -->

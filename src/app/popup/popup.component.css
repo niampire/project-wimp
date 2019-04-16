@@ -1,0 +1,239 @@
+#bg_popup{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+
+  #popup {
+  background: #fff;
+  width: 65%;
+  height: 80%;
+  /* margin: calc( (100vw - 480px)/(1280 - 480) * (800px - 500px) + 500px); */
+  margin: 5% auto;
+  padding: 5px 20px 13px 20px;
+  border: 2px solid #1BA600;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 20px #000;
+  -moz-box-shadow: 0px 0px 20px #000;
+  box-shadow: 0px 0px 20px #000;
+  /* -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; */
+  }
+
+  .close{
+  display:block;
+  position:absolute;
+  top:-12px;
+  right:5px;
+  width:25px;
+  height:25px;
+  line-height:28px;
+  color:#fff;
+  background:#1BA600;
+  cursor:pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+  background-color:#f30;
+  }
+
+  .work {
+    font-family: 'Rancho', cursive;
+    margin: 0;
+    padding: 0;
+    /* padding-top: 3%; */
+    /* width: 100% auto; */
+    /* height: 690px; */
+  }
+  .work-info {
+    /* padding-top: 30px; */
+    display: flex;
+  }
+
+
+  .work-info__h2 {
+    /* font-size: 50px; */
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (50 - 22) + 22px);
+    margin: 2% 0 4% 0;
+  }
+
+  .work-list {
+    width:65%;
+  }
+  .work-content {
+    /* padding-top: 0.5%; */
+    opacity: 0.5;
+  }
+
+  .work-content:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    margin: 1% 0 4%;
+    /* visibility: visible; */
+    transition: 2s;
+  }
+
+  .work-content__first:hover {
+    margin: 0 0 5% 0;
+  }
+
+  .work-content__last:hover {
+    margin: 2% 0 0 0;
+  }
+
+  /* .work-title:hover {
+    transition: 2s;
+  } */
+
+  .work-list {
+    cursor: pointer;
+    /* padding-left: 10%;
+    width: 150vh; */
+  }
+
+  .work-list__h3 {
+    /* font-size: 45px; */
+    margin: 0;
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (35 - 20) + 20px);
+  }
+
+  .work-list__text {
+    /* font-size: 25px; */
+    font-family: Lato;
+    font-weight: 200;
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (18 - 10) + 10px);
+  }
+
+  .work-img {
+    width: 40%;
+   /* padding-top: 8%; */
+    /* width: 150vh; */
+    /* width: 100%; */
+    /* float: right; */
+  }
+  .work-img__photo {
+    width: 100%;
+    margin-top: 25%;
+  }
+
+
+  .work-link {
+  text-decoration: none;
+  }
+
+  .work-link:visited {
+    color: #000;
+  }
+
+  .work-text {
+    /* background-color: yellow;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 130px; */
+    opacity: 1;
+
+  }
+
+  .text-hidden {
+    visibility: hidden;
+  }
+
+  .work-title:hover+.text-hidden,
+  .text-hidden:hover,
+  .work-content:hover,
+  .work-title:hover {
+    visibility: visible;
+    /* transition: 1.5s; */
+  }
+
+  @media (min-width: 1281px) {
+    #popup {
+      height: 70%;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    #popup {
+      height: 70%;
+    }
+
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #popup {
+      height: 55%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    #popup {
+      height: 55%;
+    }
+/*
+    .work-img {
+     display: none;
+    }
+
+    .work-list {
+      width:95%;
+    } */
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    #popup {
+      height: 45%;
+    }
+
+    .work-img {
+      display: none;
+     }
+
+     .work-list {
+      width:100%;
+    }
+
+  }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    #popup {
+      height: 39%;
+    }
+
+    .work-img {
+      display: none;
+     }
+
+     .work-list {
+      width:100%;
+    }
+  }
+
+  @media  (max-width: 320px) {
+
+    #popup {
+      height: 39%;
+    }
+
+    .work-img {
+      display: none;
+     }
+
+     .work-list {
+      width:100%;
+    }
+  }

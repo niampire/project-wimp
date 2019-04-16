@@ -12,46 +12,20 @@
   /* color: #FFF; */
 }
 
+.home-background {
+  margin-top: 59px;
+  width: 100%;
+}
 .image{
 width: 100%;
-height: auto;
-
-/* position: relative; */
-/* background-image: teal url(https://www.lostmydoggie.com/img/slide0.jpg); */
-/* background-blend-mode: darken; */
+/* height: auto; */
+/* padding-top: 59px; */
 }
-
-/* .image:before {
-  height: 750px;
-  opacity: 0.6!important;
-  width: 1300px;
-  top: 0;
-  border-radius: 50%;
-  margin-left: -540px;
-  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
-  transform: translate3d(-20%, 0, 0);
-  background-color: #108896;
-  margin-top: -750px;
-  transform: translateX(0);
-  position: absolute;
-} */
-
-/* .image:after {
-  content: "";
-  display: block;
-  position: absolute; /* тоже могла бы быть абсолютной */
-  /* top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(0,0,0,0.2);
-}  */
 
 .button-start {
   height: 55px;
   width: 180px;
-  background-color: #f04e4e;
+  background-color: #f13c3c;
   border: none;
   box-shadow: 10px 10px 5px #927575;
 
@@ -211,4 +185,110 @@ text-decoration: none;
 .work-title:hover {
   visibility: visible;
   /* transition: 1.5s; */
+}
+
+.help {
+  margin-top: 90px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  /* height: 500px;
+  margin-bottom: 150px; */
+}
+
+.help-h2  {
+  font-family: 'Rancho';
+}
+.help-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.help-img {
+  text-align: center;
+  /* width:15%; */
+  position: absolute;
+  /* top: 25%; */
+   /* right:10%; */
+   /* bottom: 100px; */
+   opacity: 0;
+
+  /* float: right; */
+}
+
+.help-img__phone {
+  opacity: 1;
+  width: 26%;
+  right: 35%;
+  /* right: 2.8%; */
+  top: 25%;
+  /* bottom:480px; */
+}
+
+.help-img__main {
+  opacity: 1;
+  top: 50%;
+}
+
+.help-img__inside {
+width:15.1%;
+top: 360px;
+right: 40.38%;
+position: absolute;
+/* right:10%; */
+}
+
+.help-content {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 220px;
+  padding-left: 100px;
+}
+
+.help-info__string {
+  width: 15%;
+padding: 17px 30px;
+}
+
+.img-first:hover {
+  background-color: yellow;
+}
+.img-first:hover+.help-img__first{
+  opacity: 1;
+}
+
+.img-second:hover {
+  background-color: orange;
+}
+.img-second:hover+.help-img__second{
+opacity: 1;
+}
+
+.img-third:hover {
+  background-color: red;
+}
+.img-third:hover+.help-img__third{
+opacity: 1;
+}
+
+.img-fourth:hover {
+  background-color: violet;
+}
+.img-fourth:hover+.help-img__fourth{
+opacity: 1
+}
+
+.img-fifth:hover {
+  background-color: blue;
+}
+.img-fifth:hover+.help-img__fifth{
+  opacity: 1;
+}
+
+.img-six:hover {
+  background-color: green;
+}
+.img-six:hover+.help-img__six{
+  opacity: 1;
 }

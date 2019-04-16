@@ -4,7 +4,13 @@
   background-image: url ('./assets/paws.svg');
   /* background-image: url ('https://svgsilh.com/svg_v2/1353144.svg'); */
 }
-div
+
+
+.gallery-title {
+  margin-top: 60px;
+  padding-top: 3%
+}
+
 /* .gallery-users {
   flex-wrap: wrap;
 } */

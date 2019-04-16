@@ -17,32 +17,84 @@
   [zoomControl]="true"
   (mapClick)="mapClicked($event)">
 
-  <agm-marker
-      *ngFor="let m of markers; let i = index"
-      (markerClick)="clickedMarker(m.label, i)"
-      [latitude]="m.lat"
-      [longitude]="m.lng"
-      [label]="m.label"
-      [markerDraggable]="m.draggable"
-      (dragEnd)="markerDragEnd(m, $event)">
+
+
+  <div *ngIf='requests'>
+
+    <agm-marker *ngFor="let request of requests"
+      [latitude]=request.lat
+      [longitude]=request.lon
+    >
 
     <agm-info-window>
-      <strong class='map-info'>
-        <a href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg'>
-          <img class='marker-image' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt="">
-        </a>
-        <!-- <p>InfoWindow content</p> -->
+      <strong class="map-info">
+        <p>Info</p>
       </strong>
     </agm-info-window>
 
-  </agm-marker>
 
-  <agm-circle [latitude]="lat" [longitude]="lng"
+    </agm-marker>
+  </div>
+
+  <!-- <agm-marker
+  [latitude]="49.400736197500116"
+  [longitude] = "32.068210083796885"
+  [label]='L'
+  ></agm-marker>
+
+  <agm-marker
+  [latitude]="49.42875531796478"
+  [longitude] = "32.01087486236736"
+  [label]='L'
+  > -->
+
+  <!-- </agm-marker>
+
+<agm-marker
+      [latitude]="49.42875531796478"
+      [longitude]="32.01087486236736"
+      [latitude]="49.400736197500116"
+      [longitude] = "32.068210083796885"
+      [label]="L"
+      > -->
+
+
+
+  <!-- <span *ngIf='request'> -->
+      <!-- <agm-marker
+      *ngFor="let request of requests"
+      (markerClick)="clickedMarker(label, i)"
+      [latitude]="49.42875531796478"
+      [longitude]="32.01087486236736"
+      [label]="L"
+      [markerDraggable]="m.draggable"
+      (dragEnd)="markerDragEnd(m, $event)"
+      > -->
+
+
+
+    <!-- <agm-info-window>
+      <strong class='map-info'>
+        <a href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg'>
+          <img class='marker-image' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt=""> -->
+          <!-- <img class='marker-image' src="{{request.photoURL}}" alt=""> -->
+        <!-- </a> -->
+        <!-- <p>InfoWindow content</p> -->
+      <!-- </strong>
+    </agm-info-window> -->
+
+  <!-- </agm-marker> -->
+  <!-- </span> -->
+
+
+  <!-- <agm-circle
+      [latitude]="lat"
+      [longitude]="lng"
       [radius]="5000"
       [fillColor]="red"
       [circleDraggable]="true"
       [editable]="true">
-  </agm-circle>
+  </agm-circle> -->
 
 
 </agm-map>

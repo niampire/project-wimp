@@ -25,6 +25,7 @@ import { FormGroupComponent } from './page/found/form-group/form-group.component
 import { FormControlModule} from './page/found/form-control/form-control.module';
 import { FormGroupModule} from './page/found/form-group/form-group.module';
 import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
     FormControlComponent,
     NgmodelComponent,
     FormGroupComponent,
+    PopupComponent,
     // ImageComponent
   ],
   imports: [
