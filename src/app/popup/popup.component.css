@@ -11,8 +11,8 @@
 
   #popup {
   background: #fff;
-  width: 65%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   /* margin: calc( (100vw - 480px)/(1280 - 480) * (800px - 500px) + 500px); */
   margin: 5% auto;
   padding: 5px 20px 13px 20px;
@@ -66,12 +66,14 @@
 
   .work-info__h2 {
     /* font-size: 50px; */
+    
     font-size: calc( (100vw - 480px)/(1280 - 480) * (50 - 22) + 22px);
-    margin: 2% 0 4% 0;
+    margin: 3% 0 4% 0;
+    text-shadow: 5px 5px 10px #4b4a4a;
   }
 
   .work-list {
-    width:65%;
+    width:70%;
   }
   .work-content {
     /* padding-top: 0.5%; */
@@ -107,14 +109,14 @@
   .work-list__h3 {
     /* font-size: 45px; */
     margin: 0;
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (35 - 20) + 20px);
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (32 - 20) + 20px);
   }
 
   .work-list__text {
     /* font-size: 25px; */
     font-family: Lato;
     font-weight: 200;
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (18 - 10) + 10px);
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (16 - 10) + 10px);
   }
 
   .work-img {
@@ -126,7 +128,7 @@
   }
   .work-img__photo {
     width: 100%;
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
 
@@ -159,42 +161,39 @@
     /* transition: 1.5s; */
   }
 
-  @media (min-width: 1281px) {
+  @media (min-width: 1501px) {
     #popup {
-      height: 70%;
+      height: 75%;
+    }
+  }
+  @media (min-width: 1281px) and (max-width: 1500px) {
+    #popup {
+      height: 65%;
     }
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
     #popup {
-      height: 70%;
+      height: 59%;
     }
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     #popup {
-      height: 55%;
+      height: 56%;
     }
   }
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
     #popup {
-      height: 55%;
+      height: 60%;
     }
-/*
-    .work-img {
-     display: none;
-    }
-
-    .work-list {
-      width:95%;
-    } */
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
 
     #popup {
-      height: 45%;
+      height: 48%;
     }
 
     .work-img {
@@ -211,7 +210,7 @@
   @media (min-width: 320px) and (max-width: 480px) {
 
     #popup {
-      height: 39%;
+      height: 40%;
     }
 
     .work-img {
@@ -226,7 +225,7 @@
   @media  (max-width: 320px) {
 
     #popup {
-      height: 39%;
+      height: 34%;
     }
 
     .work-img {

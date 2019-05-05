@@ -77,22 +77,22 @@ export class MapComponent implements OnInit {
   ngOnInit() {
 
 
-    // this.data.getUsers().subscribe(data => {
+    this.data.getUsers().subscribe(data => {
 
-    //   this.response = data;
-    //   this.requests = this.response.requests;
-    //   console.log(this.requests);
+      this.response = data;
+      this.requests = this.response.requests;
+      console.log(this.requests);
 
-    // });
-
-
-    this.requests = [
-      {"id":"1","type":"search","message":"Сірий котик","photoURL":"http://ec2-3-122-245-231.eu-central-1.compute.amazonaws.com:3030/api/v1/photo/AgADAgADl6sxGx-XMUmbMWfPtL6teolgXw8ABPRQcLWKUVyF2WoDAAEC","creationDate":"1555262814323","username":"XX_NF_XX","userPlatform":"telegram","lon":"32.083182","lat":"49.432152"},
-      {"id":"2","type":"search","message":"ічухайє жітовтік","photoURL":"http://ec2-3-122-245-231.eu-central-1.compute.amazonaws.com:3030/api/v1/photo/AgADAgADl6sxGx-XMUmbMWfPtL6teolgXw8ABPRQcLWKUVyF2WoDAAEC","creationDate":"1555262814323","username":"XX_NF_XX","userPlatform":"telegram","lon":"32.083182","lat":"49.400736197500116"}
+    });
 
 
-    ]
-    console.log(this.requests);
+    // this.requests = [
+    //   {"id":"1","type":"search","message":"Сірий котик","photoURL":"http://ec2-3-122-245-231.eu-central-1.compute.amazonaws.com:3030/api/v1/photo/AgADAgADl6sxGx-XMUmbMWfPtL6teolgXw8ABPRQcLWKUVyF2WoDAAEC","creationDate":"1555262814323","username":"XX_NF_XX","userPlatform":"telegram","lon":"32.083182","lat":"49.432152"},
+    //   {"id":"2","type":"search","message":"ічухайє жітовтік","photoURL":"http://ec2-3-122-245-231.eu-central-1.compute.amazonaws.com:3030/api/v1/photo/AgADAgADl6sxGx-XMUmbMWfPtL6teolgXw8ABPRQcLWKUVyF2WoDAAEC","creationDate":"1555262814323","username":"XX_NF_XX","userPlatform":"telegram","lon":"32.083182","lat":"49.400736197500116"}
+
+
+    // ]
+    // console.log(this.requests);
   }
 
 }

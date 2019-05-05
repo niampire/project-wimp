@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +26,8 @@ import { FormControlModule} from './page/found/form-control/form-control.module'
 import { FormGroupModule} from './page/found/form-group/form-group.module';
 import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
 import { PopupComponent } from './popup/popup.component';
+import { MapSearchComponent } from './page/found/map-search/map-search.component';
+// import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,15 +47,20 @@ import { PopupComponent } from './popup/popup.component';
     NgmodelComponent,
     FormGroupComponent,
     PopupComponent,
-    // ImageComponent
+    MapSearchComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCYGVs9mWDS-kphq4z7Fx7aGEYHik71MSs'
+      apiKey: 'AIzaSyCYGVs9mWDS-kphq4z7Fx7aGEYHik71MSs',
+      clientId: '',
+      // language: 'en',
+      libraries: ['geometry', 'places']
     })
   ],
 

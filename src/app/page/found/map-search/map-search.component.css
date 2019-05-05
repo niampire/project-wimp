@@ -1,3 +1,4 @@
+
 .map-container {
   width: 100%;
   /* margin-bottom: 100px; */
@@ -35,4 +36,9 @@ agm-map {
 .marker-image {
   width: 100px;
   height: auto;;
+}
+.map-content__icon {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
 }

@@ -148,6 +148,7 @@ justify-content: flex-end;
     .nav-toggle {
     display: block;
     padding-bottom: 20px;
+    padding-right: 15px;
     }
     header {
     padding: 10px 0;
@@ -198,7 +199,7 @@ justify-content: flex-end;
       /* border: 1px solid black; */
     }
     .found-toggle {
-      padding: 15px 54px 15px 54px;
+      padding: 15px 74px 15px 74px;
       /* background-color: #69caf7; */
     }
 

@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RequestService } from './request.service';
+import { DateconverterService } from './dateconverter.service';
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.css'],
-  providers: [RequestService]
+  providers: [RequestService, DateconverterService]
 })
 export class ImageComponent implements OnInit {
 
@@ -39,7 +40,9 @@ export class ImageComponent implements OnInit {
 
         console.log(this.requests);
 
-        // this.resolving = '112317'
+        // const myDate = new Date();
+        // myDate.setTime(this.request);
+
  });
  }
   }

@@ -8,20 +8,37 @@
               <!-- <a>{{ user.first_name }},</a><p>{{ user.last_name }}</p> -->
 
         <div class='gallery-info'>
-            <a href='{{request.photoURL}}'>
+          <!-- <a href=''> -->
+            <a href='{{request.photoURL}}' target="_blank">
               <figure class='gallery-figure'>
                 <img class='gallery-image' src='{{request.photoURL}}' alt="photo-pet">
+
                 <figcaption>
                     <div class='gallery-title'>
                         <h3> {{ request.username }} </h3>
-                        {{request.type}}
-                        <p> {{request.creationDate}}</p>
+                        {{request.type}}<br>
+                        <!-- <p> {{request.creationDate | myDate}}</p> -->
 
+                        {{request.creationDate | date:"dd.MM.yyyy"}}
                     </div>
                     <p>{{request.message}}</p>
                 </figcaption>
               </figure>
             </a>
+            <!-- <a href="#_" class="lightbox" id="image">
+                <img src='{{request.photoURL}}'>
+            </a> -->
+            <!-- <a class="thumbnail" href="#">
+              <img style="width: 217px; height: 313px;"
+              src='{{request.photoURL}}'>
+              <span>Описание изображения<img  style="width: 554px; height: 800px;" src='{{request.photoURL}}''>
+              </span>
+            </a> -->
+
+            <!-- <a href='{{request.photoURL}}' target="_blank">
+                <img style="border: 0px solid ; width: 224px; height: 323px;" alt="" src='{{request.photoURL}}'>
+            </a> -->
+
           </div>
         </div>
       </div>

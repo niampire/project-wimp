@@ -20,18 +20,20 @@ const routes: Routes = [
   // {path: '', redirectTo: '/', pathMatch: 'full'},
   // {path: '**', redirectTo: '/', pathMatch: 'full'},
   {path: '', component: HomeComponent},
+  // {path: '#image',  redirectTo: '/image', pathMatch:'full'},
   // {path: '**', component: HomeComponent},
+  {path: '#image',  component: GalleryComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'found', component: FoundComponent},
+  {path: 'search', component: FoundComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'help', component: HelpComponent},
   // {path: 'join', component: JoinComponent},
   {path: 'login', component: LoginComponent},
   // {}
-  { path: '', redirectTo: 'ng-model', pathMatch: 'full' },
-  { path: 'ng-model', component: NgmodelComponent },
-  { path: 'reactive-forms-control', component: FormControlComponent },
-  { path: 'reactive-forms-group', component: FormGroupComponent },
+  // { path: '', redirectTo: 'ng-model', pathMatch: 'full' },
+  // { path: 'ng-model', component: NgmodelComponent },
+  // { path: 'reactive-forms-control', component: FormControlComponent },
+  // { path: 'reactive-forms-group', component: FormGroupComponent },
 
 ];
 

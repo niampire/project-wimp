@@ -13,7 +13,7 @@
   [latitude]="lat"
   [longitude]="lng"
   [zoom]="zoom"
-  [disableDefaultUI]="fauls"
+  [disableDefaultUI]="true"
   [zoomControl]="true"
   (mapClick)="mapClicked($event)">
 
@@ -24,14 +24,25 @@
     <agm-marker *ngFor="let request of requests"
       [latitude]=request.lat
       [longitude]=request.lon
-    >
+      [label]=request.type[0]
+      >
 
+<!--
     <agm-info-window>
       <strong class="map-info">
         <p>Info</p>
       </strong>
-    </agm-info-window>
+    </agm-info-window> -->
 
+    <agm-info-window>
+      <strong class='map-info'>
+        <!-- <a href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg'> -->
+          <!-- <img class='marker-image' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg" alt=""> -->
+          <img class='marker-image' src="{{request.photoURL}}" alt="">
+        <!-- </a> -->
+        <p>{{request.creationDate | date:"dd.MM.yyyy"}}</p>
+       </strong>
+    </agm-info-window>
 
     </agm-marker>
   </div>

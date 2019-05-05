@@ -8,7 +8,12 @@
 
 .gallery-title {
   margin-top: 60px;
-  padding-top: 3%
+  padding-top: 3%;
+  font-family: 'rancho', cursive;
+  font-weight: 100;
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (45 - 20) + 20px);
+  text-align: center;
+  text-shadow: 5px 5px 10px #585858;
 }
 
 /* .gallery-users {
