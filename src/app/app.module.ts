@@ -19,11 +19,11 @@ import { MapComponent } from './page/gallery/map/map.component';
 import { FilterComponent } from './page/gallery/filter/filter.component';
 // import { ValidationService } from './validation.service';
 
-import { FormControlComponent } from './page/found/form-control/form-control.component';
+// import { FormControlComponent } from './page/found/form-control/form-control.component';
 // import { NgmodelComponent } from './page/found/ngmodel/ngmodel.component';
-import { FormGroupComponent } from './page/found/form-group/form-group.component';
-import { FormControlModule} from './page/found/form-control/form-control.module';
-import { FormGroupModule} from './page/found/form-group/form-group.module';
+// import { FormGroupComponent } from './page/found/form-group/form-group.component';
+// import { FormControlModule} from './page/found/form-control/form-control.module';
+// import { FormGroupModule} from './page/found/form-group/form-group.module';
 // import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
 import { PopupComponent } from './popup/popup.component';
 import { MapSearchComponent } from './page/found/map-search/map-search.component';
@@ -43,9 +43,9 @@ import { MapSearchComponent } from './page/found/map-search/map-search.component
     ImageComponent,
     MapComponent,
     FilterComponent,
-    FormControlComponent,
+    // FormControlComponent,
     // NgmodelComponent,
-    FormGroupComponent,
+    // FormGroupComponent,
     PopupComponent,
     MapSearchComponent,
     ImageComponent

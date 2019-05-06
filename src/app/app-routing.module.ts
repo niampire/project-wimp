@@ -6,16 +6,13 @@ import { HomeComponent } from './page/home/home.component';
 import { FoundComponent } from './page/found/found.component';
 import { GalleryComponent } from './page/gallery/gallery.component';
 import { HelpComponent } from './page/help/help.component';
-// import { JoinComponent } from './page/join/join.component';
 import { LoginComponent } from './page/login/login.component';
 
 
-import { NgmodelComponent} from './page/found/ngmodel/ngmodel.component';
-import { FormControlComponent} from './page/found/form-control/form-control.component';
-import { FormGroupComponent} from './page/found/form-group/form-group.component';
-import { NgmodelModule} from './page/found/ngmodel/ngmodel.module';
-import { FormControlModule} from './page/found/form-control/form-control.module';
-import { FormGroupModule} from './page/found/form-group/form-group.module';
+// import { NgmodelComponent} from './page/found/ngmodel/ngmodel.component';
+// import { FormControlComponent} from './page/found/form-control/form-control.component';
+// import { FormGroupComponent} from './page/found/form-group/form-group.component';
+// import { NgmodelModule} from './page/found/ngmodel/ngmodel.module';
 const routes: Routes = [
   // {path: '', redirectTo: '/', pathMatch: 'full'},
   // {path: '**', redirectTo: '/', pathMatch: 'full'},
