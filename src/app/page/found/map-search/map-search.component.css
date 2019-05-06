@@ -5,6 +5,7 @@
   /* display: flex; */
   /* text-align: center; */
   margin: 0 auto;
+  
   /* width: 1000px; */
 
 }
@@ -27,11 +28,10 @@ agm-map {
   }
 }
 
-
-.map-info {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-}
+/* .map-info {
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 .marker-image {
   width: 100px;
@@ -41,4 +41,21 @@ agm-map {
   width: 30px;
   height: 30px;
   opacity: 1;
+}
+
+.form-map__label {
+  font-size: 25px;
+  padding-right: 15px;
+}
+.form-map__input {
+  margin: 2% 0;
+  padding: 9px 30px;
+  border: 2px solid #fa973a;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-map__info {
+  font-size: 17px;
 }

@@ -23,8 +23,21 @@ export class FoundComponent implements OnInit{
 //     console.log('hello');
 
 //   }
+// uploadFrom: FormGroup;
+
+requestForm = new FormGroup({
+  type: new FormControl(),
+  date: new FormControl(),
+  description: new FormControl(),
+
+});
 
 today: Date;
+
+sendRequestFrom() {
+  console.log('start');
+
+}
 
 ngOnInit() {
   this.today = new Date();

@@ -37,7 +37,7 @@
           <div class='form-date'>
             <img class='found-content__icon' src='./assets/paw.svg'>
             <label class='form-label'>Pick A Date:</label>
-            <input class='form-date__input' id="date" lang='eng' type="date"
+            <input formControlName="date" class='form-date__input' id="date" type="date"
              [ngModel]="today | date:'yyyy-MM-dd'"
              (ngModelChange)="today = $event"
              name="dt"
@@ -54,6 +54,7 @@
               cols="48"
               rows="8"
               pattern='[A-Za-z]{3}'
+              formControlName="description"
               placeholder='Enter information about the pet' required>
             </textarea>
           </div>
@@ -79,6 +80,6 @@
       <app-map-search></app-map-search>
     </div>
 
-    <button type='submit'>Send</button>
+    <button class='form-submit'type='submit'>Send</button>
 
 </form>
