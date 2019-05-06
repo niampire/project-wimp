@@ -17,12 +17,10 @@
   text-shadow: 5px 5px 10px #585858;
   padding-bottom: 1%;
 }
+
 .found-form {
   width: 36%;
   padding-left: 32%;
-}
-.radio-btn {
-  /* padding: 15px; */
 }
 
 .found-content__icon {
@@ -50,7 +48,7 @@
 .form-type__radio,
 .radio-btn {
   display: flex;
-  padding-left: 6%;
+  padding-left: 8%;
 }
 
 .form-label,
@@ -121,7 +119,7 @@
 }
 
 .form-date__input {
-  margin-left: 15%;
+  margin-left: 19%;
   padding-left: 20px;
   text-align: center;
   border-radius: 10px;
@@ -150,7 +148,7 @@
 
 .found-input__file {
   color: transparent;
-  padding: 0 0 5px 25px;
+  padding: 0 0 5px 47px;
   border: none;
 }
 .found-input__file::-webkit-file-upload-button {

@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core'
 import { AgmCoreModule, MapsAPILoader, MouseEvent, AgmMap } from '@agm/core';
 import { NgModule } from '@angular/core';
 // import { google } from '@agm/core/services/google-maps-types';
-declare let google;
+// declare let google;
 @Component({
   selector: 'app-map-search',
   templateUrl: './map-search.component.html',

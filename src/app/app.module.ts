@@ -20,11 +20,11 @@ import { FilterComponent } from './page/gallery/filter/filter.component';
 // import { ValidationService } from './validation.service';
 
 import { FormControlComponent } from './page/found/form-control/form-control.component';
-import { NgmodelComponent } from './page/found/ngmodel/ngmodel.component';
+// import { NgmodelComponent } from './page/found/ngmodel/ngmodel.component';
 import { FormGroupComponent } from './page/found/form-group/form-group.component';
 import { FormControlModule} from './page/found/form-control/form-control.module';
 import { FormGroupModule} from './page/found/form-group/form-group.module';
-import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
+// import { NgmodelModule } from './page/found/ngmodel/ngmodel.module';
 import { PopupComponent } from './popup/popup.component';
 import { MapSearchComponent } from './page/found/map-search/map-search.component';
 // import { ReactiveFormsModule } from '@angular/forms';
@@ -44,7 +44,7 @@ import { MapSearchComponent } from './page/found/map-search/map-search.component
     MapComponent,
     FilterComponent,
     FormControlComponent,
-    NgmodelComponent,
+    // NgmodelComponent,
     FormGroupComponent,
     PopupComponent,
     MapSearchComponent,

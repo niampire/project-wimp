@@ -14,12 +14,10 @@ agm-map {
   margin-right: 5%;
   margin-bottom: 20px;
 }
+
 @media ( min-width : 481 px ) and ( max-width : 767 px ) {
   .map-container {
     width: 400px;
-  }
-  agm-map {
-    /* width: 400px; */
   }
 }
 
@@ -27,6 +25,7 @@ agm-map {
   width: 100px;
   height: auto;;
 }
+
 .map-content__icon {
   width: 30px;
   height: 30px;
@@ -37,8 +36,9 @@ agm-map {
   font-size: 25px;
   padding-right: 15px;
 }
+
 .form-map__input {
-  margin: 2% 0;
+  margin: 3% 0 2% 4%;
   padding: 9px 30px;
   border: 2px solid #fa973a;
   border-radius: 10px;
