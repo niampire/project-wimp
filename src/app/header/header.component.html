@@ -11,7 +11,12 @@
   <nav class='navigation'>
       <div class="nav-toggle"><span></span>
         <ul class='toggle-menu'>
-        <li class="toggle-button">
+          <li class="toggle-button">
+              <a class='nav-home home-toggle nav-btn'
+              [routerLink]="['home']"
+              routerLinkActive="active">Home</a>
+          </li>
+          <li class="toggle-button">
             <a class='nav-found found-toggle nav-btn'
             [routerLink]="['search']"
             routerLinkActive="active">Search</a>
@@ -71,19 +76,7 @@
         [routerLink]="['login']"
         routerLinkActive="active">Login</a>
       </li>
-
-      <!-- <li class='join-hover join'>
-        <a [routerLink]="['join']"
-        routerLinkActive="active">Join</a>
-      </li> -->
     </ul>
-    <!-- <div>
-      <li class="header-button">
-        <a class='nav-login login'
-        [routerLink]="['login']"
-        routerLinkActive="active">Login</a>
-      </li>
-    </div> -->
   </nav>
 </div>
 <!-- <script>

@@ -1,14 +1,11 @@
-
+*  {
+  outline: none !important;
+}
 .map-container {
   width: 100%;
-  /* margin-bottom: 100px; */
-  /* display: flex; */
-  /* text-align: center; */
   margin: 0 auto;
-  
-  /* width: 1000px; */
-
 }
+
 agm-map {
   display: flex;
   width: 85%;
@@ -19,19 +16,12 @@ agm-map {
 }
 @media ( min-width : 481 px ) and ( max-width : 767 px ) {
   .map-container {
-    /* text-align: center;
-    width: calc(70% - 6px); */
     width: 400px;
   }
   agm-map {
     /* width: 400px; */
   }
 }
-
-/* .map-info {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .marker-image {
   width: 100px;

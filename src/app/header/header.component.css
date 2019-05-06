@@ -1,7 +1,6 @@
 *{
   font-family: 'Lato', sans-serif;
   color:#000;
-  /* width: 100% auto; */
   padding: 0;
   margin: 0;
 }
@@ -10,7 +9,6 @@
   background-color: #FFF;
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
   position: fixed;
   top: 0;
   left: 0;
@@ -25,31 +23,16 @@
   height: 55px;
   margin: 3px 0 3px 10px;
   cursor: pointer;
-  /* margin-bottom: 5px; */
   outline: none;
 }
 
-/* .header-logo:active {
-  border: 0;
-  background-color: #FFF
-} */
 
-.navigation {
-  /* padding-left: 600px; */
-  /* width: 600px; */
-justify-content: flex-end;
-  /* display: flex; */
-  /* text-align: center; */
-/* justify-content: space-around; */
-  /* margin-left: 400px; */
-  /* text-decoration: none; */
-}
 .nav-list {
   display: flex;
   padding-left: 0;
   padding-top: 16px;
-  /* justify-content: space-between; */
 }
+
 .header-button {
   padding: 4px 0 4px;
   justify-content: space-between;
@@ -60,13 +43,6 @@ justify-content: flex-end;
   text-decoration: none;
 }
 
-.enter {
-  /* margin-left: 20px */
-}
-/* .header-button {
-  padding: 10 0;
-} */
-
 .home,
 .found,
 .gallery,
@@ -75,9 +51,6 @@ justify-content: flex-end;
   padding: 20px 55px 24px;
 }
 
-/* .login {
-  margin-left: 100px;
-} */
 .nav-home:hover,
 .nav-home:focus {
   background-color: #d1f5f2;
@@ -103,7 +76,7 @@ justify-content: flex-end;
   background-color: #f77979;
 }
 
-/* кнопка переключения меню, появляющаяся при ширине 768px */
+
 .nav-toggle {
   display: none;
   position: relative;
@@ -138,13 +111,13 @@ justify-content: flex-end;
   .nav-toggle span:after {
   bottom: -10px;
   }
-  /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+  /* show hidden menu*/
   #menu.active {
   max-height: 123px;
   }
 
   @media (max-width: 768px) {
-    /* показываем кнопку для переключения верхней навигации */
+    /* show menu-toggle */
     .nav-toggle {
     display: block;
     padding-bottom: 20px;
@@ -153,7 +126,7 @@ justify-content: flex-end;
     header {
     padding: 10px 0;
     }
-    /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+    /* hidden menu */
     #menu {
     max-height: 0;
     background: white;
@@ -174,33 +147,30 @@ justify-content: flex-end;
       width: 200px;
       height: 180px;
       margin-left: -146px;
-      /* background-color:#FFF; */
-      /* opacity: 0.3; */
       display: none;
     }
 
     .toggle-button {
       list-style: none;
       margin: 30px 0;
-      /* margin-top: 10px;
-      margin-bottom: 10px; */
     }
 
+    .home-toggle,
     .found-toggle,
     .gallery-toggle,
     .help-toggle,
     .login-toggle {
-      /* width: 100px;
-      /* height: 30px; */
-      /* margin-top: 40px; */
       margin: 25px 0;
       background-color: #FFF;
       opacity: 0.7;
-      /* border: 1px solid black; */
     }
+
+    .home-toggle {
+      padding: 15px 79px 15px 79px;
+    }
+
     .found-toggle {
-      padding: 15px 74px 15px 74px;
-      /* background-color: #69caf7; */
+      padding: 15px 76px 15px 77px;
     }
 
     .gallery-toggle {
@@ -215,9 +185,6 @@ justify-content: flex-end;
       padding: 15px 82px 15px 81px;
     }
 
-    .found-toggle {
-      /* padding-top: 20px */
-    }
     .nav-toggle:hover .toggle-menu {
       display: block;
     }

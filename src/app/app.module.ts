@@ -59,7 +59,7 @@ import { MapSearchComponent } from './page/found/map-search/map-search.component
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCYGVs9mWDS-kphq4z7Fx7aGEYHik71MSs',
       clientId: '',
-      // language: 'en',
+      language: 'en',
       libraries: ['geometry', 'places']
     })
   ],

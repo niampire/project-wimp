@@ -19,10 +19,6 @@
 }
 .image{
 width: 100%;
-
-
-/* height: auto; */
-/* padding-top: 59px; */
 }
 
 .button-start {
@@ -54,7 +50,10 @@ width: 100%;
   50% { transform: scale(1); opacity: 1; }
   100% { transform: scale(0.9); opacity: 0.7; }
 }
-
+.title-info__button {
+  text-decoration: none;
+  color: #000;
+}
 .button-start__title {
   /* font-size: 35px; */
   font-size: calc( (100vw - 480px)/(1280 - 480) * (40 - 15) + 15px);
