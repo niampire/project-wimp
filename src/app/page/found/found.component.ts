@@ -19,10 +19,10 @@ export class FoundComponent implements OnInit{
 //     lastName: new FormControl
 //   });
 
-//   sendRequestFrom(){
-//     console.log('hello');
+  //  sendRequestFrom(){
+  //    console.log('hello');
 
-//   }
+  //  }
 // uploadFrom: FormGroup;
 
 requestForm = new FormGroup({
@@ -34,7 +34,7 @@ requestForm = new FormGroup({
 
 today: Date;
 
-sendRequestFrom() {
+sendRequestForm() {
   console.log('start');
 
 }
